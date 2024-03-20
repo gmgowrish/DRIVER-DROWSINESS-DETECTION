@@ -73,4 +73,7 @@ cnn_model.fit(
     steps_per_epoch=SPE,
     validation_steps=VS,
 )
+
+# Here the floder created automatically.
+
 cnn_model.save("models/cnnCat2.h5", overwrite=True)
