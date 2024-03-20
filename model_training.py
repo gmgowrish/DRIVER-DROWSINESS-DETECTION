@@ -38,8 +38,9 @@ def generator(
 
 BS = 32
 TS = (24, 24)
-train_batch = generator("dataset_new/train", shuffle=True, batch_size=BS, target_size=TS)
-valid_batch = generator("dataset_new/test", shuffle=True, batch_size=BS, target_size=TS)
+#  Download the DataSet form the link 
+train_batch = generator("ADD THE DATA_SET FILE OF TRAIN HERE", shuffle=True, batch_size=BS, target_size=TS)
+valid_batch = generator("ADD THE DATA_SET FILE OF TEST HERE", shuffle=True, batch_size=BS, target_size=TS)
 SPE = len(train_batch.classes) // BS
 VS = len(valid_batch.classes) // BS
 print(SPE, VS)
