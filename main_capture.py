@@ -15,6 +15,8 @@ reye = cv2.CascadeClassifier('haar cascade files/haarcascade_righteye_2splits.xm
 
 lbl = ['Close', 'Open']
 
+# Add the crated model path in here Default the path is add.
+
 model = load_model('models/cnnCat2.h5')
 path = os.getcwd()
 cap = cv2.VideoCapture(0)
